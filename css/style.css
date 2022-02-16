@@ -1,0 +1,685 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #f5f5f5;
+    scroll-behavior: smooth;
+    
+}
+
+video::-internal-media-controls-download-button {
+    display:none;
+}
+
+video::-webkit-media-controls-enclosure {
+    overflow:hidden;
+}
+
+body {
+    background-color: #0C1726;
+}
+
+@font-face {
+    font-family: hollow;
+    src: url(../assets/fonts/hollow.ttf);
+}
+
+header nav {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 3em;
+    padding-right: 3em;
+    width: 100vw;
+    height: 8vh;
+    max-width: 100%;
+    background-color: #0C1726;
+    box-shadow: 0em 1em 3em #8c8a8067;
+    z-index: 2;
+}
+
+header nav #btn-mobile {
+    display: none;
+}
+
+header nav a#idHollow {
+    display: flex;
+    color: #f5f5f5;
+    width: 200px;
+    align-items: center;
+    text-decoration: none;
+    font-family: hollow, sans-serif;
+}
+
+header nav a img.logoBar {
+    width: 150px;
+    height: 100px;
+}
+
+
+section#top .backgroundImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/hollow\ knight.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 0;
+    
+}
+
+section#top .backgroundImage h2 {
+    padding: 0;
+    font-family: hollow, sans-serif;
+    padding-bottom: 1em;
+    font-size: 2em;
+}
+
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+    list-style: none;
+}
+
+
+header nav ul li a{
+    display: flex;
+    padding-left: 1em;
+    margin-right: 2em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: hollow, sans-serif;
+    text-align: center;
+    color: #f5f5f5;
+    font-size: 5em;
+    text-shadow: 6px 6px 6px black;
+}
+
+
+#introducao {
+    background-image: url(../images/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+section .subMenu {
+    font-family: hollow, sans-serif;
+    text-align: center;
+    font-size: 5em;
+    padding: 1em;
+    color: #f5f5f5;
+    text-shadow: 6px 6px 6px black;
+}
+
+section .container {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #0c1726ab;
+}
+
+section .container p {
+    padding: 4em;
+    margin: 0;
+    padding: 1em;
+    font-size: 2em;
+}
+
+section .container p a {
+    color: #f5f5f5;
+}
+
+/*fim introducao*/
+
+
+/* section jogabilidade*/
+
+#jogabilidade {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: #0C1726;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#jogabilidade .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 20vh;
+    width: 100%;
+    background-color: transparent;
+}
+
+#jogabilidade article {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2em;
+}
+
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2em;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+#jogabilidade .container .box video {
+    width: 300px;
+    height: 300px;
+    max-width: 100%;
+    max-height: 100vh;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+#jogabilidade .container .box button {
+    margin-top: 1em;
+    margin-bottom: 4em;
+    width: 50%;
+    height: 20%;
+    background-color: #D9D3D2;
+    color: #0C1726;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+
+#jogabilidade .container .box button:hover {
+    background-color: #0C1726;
+    color: #f5f5f5;
+    border: solid 2px #D9D3D2;
+}
+
+/*historia*/
+
+#historia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 8vh);
+    width: 100%;
+}
+
+#historia video {   
+    max-height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    filter: blur(10px) sepia();
+}
+
+
+
+#historia h2 {
+    font-family: hollow, sans-serif;
+    text-shadow: 6px 6px 6px black;
+    font-size: 6em;
+    position:absolute;
+    text-align:center;
+    z-index:1;
+}
+
+/*historiaDois*/
+
+#historiaDois {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh - 8vh);
+    background-color: #0C1726;
+    margin-top: 7vh;
+}
+
+#historiaDois  .container {
+    columns: 1;
+    width: 80%;
+    height: 100%;
+}
+
+
+#historiaDois  .container p {
+    padding: 50px;
+    font-size: 14px;
+}
+
+
+#historiaDois  .container  img {
+    float: right;
+    width: 300px;
+}
+
+#historiaDois  .container  .hornet {
+    float: left;
+    width: 300px;
+}
+
+/*Conclusao*/
+
+
+#emConclusao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 8vh);
+    width: 100%;
+}
+
+#emConclusao video {   
+    max-height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    filter: blur(7px);
+}
+
+#emConclusao h2 {
+    font-family: hollow, sans-serif;
+    text-shadow: 6px 6px 6px black;
+    font-size: 6em;
+    position:absolute;
+    text-align:center;
+    z-index:1;
+}
+
+#emConclusaoDois {
+    width: 100%;
+}
+
+#emConclusaoDois  .container {
+    height: 100%;
+    font-size: 14px;
+}
+
+#emConclusaoDois  .container p {
+    padding-top: 5em;
+}
+
+
+/*footer*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h2 {
+    font-size: 20px;
+}
+
+footer a {
+    margin-top: 1em;
+
+    cursor: pointer;
+    font-size: 20px;
+
+}
+
+footer a img {
+    width: 40px;
+    height: 20px;
+    object-fit: contain;
+}
+
+
+
+
+
+
+@media (max-width: 900px) {
+
+    section#top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        background-image: url(../images/hollow\ knight.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed ;
+        margin: 0;
+    }
+
+    header nav {
+        display: flex;
+        position: fixed;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 1em;
+        padding-right: 3em;
+        width: 100vw;
+        height: 8vh;
+        background-color: #0C1726;
+        box-shadow: 0em 1em 3em #8c8a8067;
+        z-index: 999999;
+    }
+
+    header nav a#idHollow {
+        width: 110px;
+        color: #f5f5f5;
+
+    }
+
+    
+header nav a img.logoBar {
+    width: 50px;
+    height: 30px;
+    object-position: center center;
+
+}
+
+    
+
+    header nav a.logoHollow {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        font-family: hollow, sans-serif;
+    }
+
+    header nav #btn-mobile{
+        display: flex;
+        padding: 5px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        color: #f5f5f5;
+        transition: background-color 0.5s ease-in-out;
+        gap: .5em;
+    }
+
+    span#hamburger {
+        display: block;
+        border-top: 2px solid #f5f5f5;
+        width: 20px;
+    }
+
+    span#hamburger::after, span#hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .4s;
+        position: relative;
+    }
+
+    #nav.active #hamburger {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg); 
+        top: -7px;
+    }
+
+
+    header nav ul#menu {
+        display: block;
+        position: absolute;
+        width: 0%;
+        height: 70;
+        top: 8vh;
+        right: 0;
+        height: calc(100vh - 8vh);
+        background-color: #0C1726;
+        z-index: 1000;
+        transition: .6s;
+        transition-delay: .3s;
+        visibility: hidden;
+        overflow-x: hidden;
+
+    }
+
+    #nav.active #menu {
+        width: 70%;
+        box-shadow: -1em -1em 1em #0C1726;
+        visibility: visible;
+        overflow: auto;
+        overflow-x: hidden;
+    }
+
+
+    header nav ul li{
+        margin-top: 1em;
+    }
+
+    header nav ul li a {
+        display: block;
+        width: 100vw;
+        padding-left:  1em;
+        padding-top: 1em;
+        border-bottom: 1px solid #f5f5f523;
+        transition: background-color 0.5s ease-in-out;
+    }
+
+    
+header nav ul li:nth-child(2) {
+    border-right: none;
+}
+
+
+    header nav ul li a:hover {
+        background-color: #D9D3D2;
+
+    }
+
+
+
+    section#introducao {
+
+        background-image: url(../images/fundo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+    
+
+    section .subMenu {
+        font-family: hollow, sans-serif;
+        text-align: center;
+        font-size: 2em;
+        padding: 1em;
+        color: #f5f5f5;
+        text-shadow: 6px 6px 6px black;
+    }    
+
+    section .container p {
+        padding: 4em;
+        margin: 0;
+        padding: 1em;
+        font-size: 14px;
+        margin-bottom: 2em;
+    }
+
+    section .container img {
+        display: none;
+    }
+
+    section .container {
+        columns: 1;
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        background-color: #0c1726ab;
+    }
+    
+    
+
+
+    /*section jogabilidade*/
+
+    section#jogabilidade {
+        width: 100%;
+        height: 100%;
+        background-color: #0C1726;
+    
+    }
+
+    #jogabilidade .container {
+        height: 100%;
+    }
+
+    #jogabilidade article {
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        margin-bottom: 2em;
+        font-size: 1em;
+    }
+
+
+        
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 4em;
+        margin-right: 2em;
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+    }
+
+    #jogabilidade .container .box video {
+        width: 300px;
+        height: 300px;
+        max-width: 100%;
+        max-height: 100vh;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+
+
+    #jogabilidade .container .box button {
+        margin-top: 2em;
+        width: 50%;
+        height: 20%;
+        background-color: #D9D3D2;
+        color: #0C1726;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: .4s ease-in-out;
+    }
+
+    #jogabilidade .container .box button:hover {
+        background-color: #0C1726;
+        color: #f5f5f5;
+        border: solid 2px #D9D3D2;
+    }
+
+    /*historia*/
+
+    #historia {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: calc(100vh - 8vh);
+        width: 100%;
+    }
+    
+    #historia video {   
+        max-height: 100vh;
+        width: 100%;
+        height: 100vh;
+        object-position: center;
+        filter: blur(10px);
+    }
+    
+    
+    
+    #historia h2 {
+        font-family: hollow, sans-serif;
+        text-shadow: 6px 6px 6px black;
+        font-size: 4em;
+        position:absolute;
+        text-align:center;
+        z-index:999;
+    }
+
+    #historiaDois {
+        height: 100%;
+    }
+
+    #historiaDois  .container {
+        columns: 1;
+        width: 100%;
+        height: 80%;
+    }
+    
+    
+    #historiaDois  .container p {
+    
+        font-size: 14px;
+    }
+
+        
+    #emConclusao {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: calc(100vh - 8vh);
+        width: 100%;
+    }
+
+    #emConclusao video {   
+        max-height: 100vh;
+        width: 100%;
+        height: 100vh;
+        object-position: center;
+        filter: blur(5px);
+    }
+
+    #emConclusao h2 {
+        font-family: hollow, sans-serif;
+        text-shadow: 6px 6px 6px black;
+        font-size: 3em;
+        position:absolute;
+        text-align:center;
+        z-index:999;
+    }
+
+  }
